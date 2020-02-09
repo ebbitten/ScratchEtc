@@ -1,0 +1,17 @@
+Expressions
+	Math, ints floats and strings, assignment
+print statement/ input
+encapsulation:
+	def()
+flow control:
+	If, for, while
+	Equality, 
+	Boolean operators
+	(Do the "password protection"
+ways to store data: Lists, Dictionaries
+	Adding to lists: append
+	Adding to dictionaries
+	
+	
+	
+

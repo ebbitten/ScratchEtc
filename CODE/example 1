@@ -1,0 +1,90 @@
+##myschool = "hbs"
+##Get the person's username:
+##username = input('Enter your name\n')
+##Print it back out to them
+##print("Your username is " + username)
+##temperature = 50
+##
+##if temperature < 32:
+##    print("Freezing")
+##else:
+##    print("not freezing")
+##    
+##for i in range(100):
+##    print(i)
+##
+##password_attempt = ""
+##correct_password = "password"
+##
+##while password_attempt != correct_password:
+##    print("Guess again")
+##    password_attempt = input()
+
+##def add_five(x):
+##    return( x + 5 )
+##
+##print(add_five(5))
+##
+##for i in range(100):
+##    print(add_five(i))
+
+##loops = input('please enter an integer \n')
+##
+##def add_iterate(loops, added_number):
+##    for i in range(loops):
+##        print(i+added_number)
+##
+##add_iterate(loops, 6)
+
+##revenues = [100, 120, 140, 160]
+##print(revenues)
+##print(revenues[0])
+##print(len(revenues))
+##revenues.append(180)
+##print(revenues)
+##
+##for revenue in revenues:
+##    print(revenue)
+##
+##gross_margin = 0.2
+##
+##for value in revenues:
+##    print(gross_margin * value)
+##
+##print(max(revenues))
+
+class_ranking = { "Marketing" : "Love", "Finance" : "Boring"}
+
+print(class_ranking["Marketing"])
+
+x = 10
+y = 5
+
+if x > 0 and x < y:
+    print("true")
+
+statement = True
+
+import random
+print(random.random())
+
+colors = ["Red", "Blue", "Green", "Yellow"]
+
+chosen_color = random.choice(colors)
+print(chosen_color)
+
+bag = ["Blue", "Blue", "Yellow", "Red", "Red", "Red"]
+
+def monte_carlo(trials):
+    true_outcomes = 0
+    for t in range(trials):
+        first = random.choice(bag)
+        second = random.choice(bag)
+        if (first == "Blue" and second == "Blue"):
+            true_outcomes = true_outcomes + 1
+    print("Number of true outcomes", true_outcomes)
+    print("Percent true outcomes", true_outcomes/trials)
+
+monte_carlo(10000)
+          
+     

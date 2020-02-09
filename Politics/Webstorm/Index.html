@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<h1>Hello world! This is politiACT.</h1>
+<fieldset>
+  <form>
+    First name:<br>
+    <input type="text" name="firstname" required><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+    Zip code:<br>
+    <input type="text" name="zipcode" pattern="[0-9]{5}" title="5 digit zip code" required><br>
+    Affiliation:<br>
+    <input type="radio" name="affiliation" value="Conservative"> Conservative <br>
+    <input type="radio" name="affiliation" value="Moderate-Conservative"> Moderate-Conservative <br>
+    <input type="radio" name="affiliation" value="Moderate"> Moderate <br>
+    <input type="radio" name="affiliation" value="Moderate-Liberal"> Moderate-Liberal <br>
+    <input type="radio" name="affiliation" value="Liberal"> Liberal <br>
+
+  </form>
+</fieldset>
+<h2>
+  Do you agree with today's passed measures:
+</h2>
+<fieldset>
+  <form>
+    Veteran PEER Act: <br>
+    <input type="radio" name="issue1" value="Yes"> Yes<br>
+    <input type="radio" name="issue1" value="No"> No <br>
+    National School Choice Week: <br>
+    <input type="radio" name="issue2" value="Yes"> Yes<br>
+    <input type="radio" name="issue2" value="No"> No <br>
+    National Catholic Schools Week: <br>
+    <input type="radio" name="issue3" value="Yes"> Yes<br>
+    <input type="radio" name="issue3" value="No"> No <br>
+    Pain-Capable Unborn Child Portection Act: <br>
+    <input type="radio" name="issue4" value="Yes"> Yes<br>
+    <input type="radio" name="issue4" value="No"> No <br>
+
+  </form>
+  <br>
+
+  <form>
+    <input type = "submit" value="Submit">
+  </form>
+  <form action="http://127.0.0.1:8000">
+    <input type = "submit" value = "HelloWorld">
+  </form>
+
+
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+#revenues must be a list of integers and/or floats
+#costs must be a list of integers and/or floats
+#requires that the costs list and the revenues list are the same length
+def calc_profit(revenues, costs, years):
+    profits = []
+    avg_yearly_profit = 0
+    for i in range(len(revenues)):
+        profit = revenues[i] - costs[i]
+        profits.append(profit)
+##        print("Profit for year " + str(i) + " is " + str(profit))
+##        print("List of profits is " + str(profits))
+    avg_yearly_profit = sum(profits)/years
+    return(profits)
+
+def compare_companies(company_a_revenues, company_a_costs, company_b_revenues, company_b_costs):
+    company_a_profit = calc_profit(company_a_revenues, company_a_costs, len(company_a_revenues))
+    company_b_profit = calc_profit(company_b_revenues, company_b_costs, len(company_b_revenues))
+    print(company_a_profit)
+    print(company_b_profit)
+
+#compare_companies([100,200,300], [200, 200, 200], [300, 200, 200], [150, 150, 150])
+
+import urllib.request
+import json
+def get_github(username):
+    base_url = "https://api.github.com"
+    url = base_url + "/users/" + username
+    response = urllib.request.urlopen(url).read()
+    json_response = json.loads(response)
+    number_repos = json_response["public_repos"]
+    hireable = json_response["hireable"]
+    if hireable and (number_repos>10):
+        print("Give " + str(username) + " a call")
+
+
+get_github("jnunemaker")
+
+

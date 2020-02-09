@@ -1,0 +1,17 @@
+;logout
+;you can add #IfWinActive ahk_class PuTTY to make it apply to only PuTTY windows
+esc::
+;...the script sends Shift + F7 a few times, then quit, then h twice, then exit.
+   Send +{F7}
+   Send +{F7}
+   Send +{F7}
+   Send +{F7}
+   Send +{F7}
+   Send +{F7}
+   Send quit{Enter}
+   Send h{Enter}
+   Send h{Enter}
+   Send q{ENTER}
+   Send q{ENTER}
+   Send exit{Enter}
+return
